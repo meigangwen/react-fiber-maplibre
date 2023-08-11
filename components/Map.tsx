@@ -1,19 +1,21 @@
 import React, { useEffect } from 'react'
 import maplibregl from 'maplibre-gl'
 
-export default function Map() {
+export default function Map(props) {
     
     useEffect(() => {
         const map = new maplibregl.Map({
-            style:'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
-            center: [-74.0066, 40.7135],
-            zoom: 15.5,
-            pitch: 45,
-            bearing: -17.6,
+            //style: 'https://tileserver.yilumi.com/styles/prod-singapore-maptiler-streets-style/style.json',
+            style: 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
+            center: [props.lat, props.lon], 
+            zoom: props.zoom,
+            pitch: props.pitch,
+           //bearing: -17.6,
             container: 'map',
             antialias: true
         })
 
+        
         map.on('load', () => {
             const layers = map.getStyle().layers;
     
