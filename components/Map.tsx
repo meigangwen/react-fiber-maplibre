@@ -5,8 +5,8 @@ export default function Map(props) {
     
     useEffect(() => {
         const map = new maplibregl.Map({
-            //style: 'https://tileserver.yilumi.com/styles/prod-singapore-maptiler-streets-style/style.json',
-            style: 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
+            style: 'https://tileserver.yilumi.com/styles/prod-singapore-maptiler-streets-style/style.json',
+            //style: 'https://api.maptiler.com/maps/streets/style.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL',
             center: [props.lat, props.lon], 
             zoom: props.zoom,
             pitch: props.pitch,
