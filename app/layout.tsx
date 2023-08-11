@@ -16,9 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@3.3.0/dist/maplibre-gl.css' />
-      </head>
+     
       <body className={inter.className}>{children}</body>
     </html>
   )
