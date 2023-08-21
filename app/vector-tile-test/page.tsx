@@ -1,6 +1,6 @@
 export default function Home() {
 
   return (
-    <p>hello world</p>
+    <p className="text-white">hello world</p>
   )
 }
