@@ -19,6 +19,9 @@ export function Map(props: MapProps) {
             container: 'map',
             antialias: true
         })
+        // map.showCollisionBoxes = true;
+        map.showTileBoundaries = true;
+        map.showPadding = true;
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []) // only run once
 
