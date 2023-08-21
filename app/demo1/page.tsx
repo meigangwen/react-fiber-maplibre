@@ -1,6 +1,7 @@
 'use client'
 
 import Map from "./Map"
+
 export default function Home() {
 
   return (
@@ -9,6 +10,6 @@ export default function Home() {
       lon={1.313969662500482}
       zoom={15.5}
       pitch={45} 
-  />
+    />
   )
 }
